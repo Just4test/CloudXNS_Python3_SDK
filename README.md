@@ -1,15 +1,19 @@
 # CloudXNS_Python3_SDK
 CloudXNS API Python3 Software Development Kit
 
-![CloudXNS_LOGO](https://www.cloudxns.net/Public/Sun/images/common/logo3.png)
+![CloudXNS_LOGO](https://www.cloudxns.net/Public/Sun/images/common/logo2.png)
 
-CloudXNS 官方提供的SDK是基于Pyton2提供的，本项目根据CloudXNS官方提供的API开发了Python3上可以正常使用的SDK
+CloudXNS 官方提供的SDK是基于Python2提供的，本项目根据CloudXNS官方提供的API开发了Python3上可以正常使用的SDK
 
 CloudXNS官方api文档，返回的错误代码请参考
 >https://www.cloudxns.net/Public/Doc/CloudXNS_api2.0_doc_zh-cn.zip
 
+本项目集成了CloudXNS的HTTP DNS功能，关于HTTP DNS功能请参考
+>https://www.cloudxns.net/Index/HttpDNS.html
+
 如发现本SDK存在问题，请联系我进行改进。
-Examples
+
+#Examples
 --------
 使用之前请先import CloudXNS_APISDK    
     
@@ -29,7 +33,7 @@ Examples
 
 ***更多功能，使用说明请参考官方文档或SDK中的注释***
 
-License
+#License
 -------
 
 MIT License
