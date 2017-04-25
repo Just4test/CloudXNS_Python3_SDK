@@ -157,7 +157,7 @@ class CloudXNS_API():
     :return: String
     """
 
-    def domain_host_record_delete(self, domain_host_id):
+    def domain_host_delete(self, domain_host_id):
         url = 'https://www.cloudxns.net/api2/host/' + str(domain_host_id)
         body = ''
         strdata = self.urlopen_api(url, body, 'DELETE')
