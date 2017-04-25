@@ -194,7 +194,7 @@ class CloudXNS_API():
             update_time：更新时间
     """
 
-    def domain_host_record_list(self, domain_id, host_id=None, offset=0, row_num=1, host_name=None):
+    def domain_host_record_list(self, domain_id, host_id=0, offset=0, row_num=1, host_name=None):
         if row_num > 2000:
             row_num = 2000
         #:domain_id?host_id=0&offset=:offset&row_num=:row_numURL
