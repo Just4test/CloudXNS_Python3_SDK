@@ -403,7 +403,7 @@ class CloudXNS_API():
 
     # 获取线路列表
     def get_line(self):
-        url = 'https://www.cloudxns.net/line'
+        url = 'https://www.cloudxns.net/api2/line'
         body = ''
         strdata = self.urlopen_api(url, body)
         return strdata
