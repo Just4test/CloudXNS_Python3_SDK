@@ -114,7 +114,7 @@ class CloudXNS_API():
     :return: String
     """
 
-    def domain_host_list(self, domain_id, offset=0, row_num=1, hostname=None):
+    def domain_host_list(self, domain_id, offset=0, row_num=30, hostname=None):
         if row_num > 2000:
             row_num = 2000
         url = 'https://www.cloudxns.net/api2/host/' + str(domain_id) + '?offset=' + str(offset) + '&row_num=' + str(
@@ -194,7 +194,7 @@ class CloudXNS_API():
             update_time：更新时间
     """
 
-    def domain_host_record_list(self, domain_id, host_id=0, offset=0, row_num=1, host_name=None):
+    def domain_host_record_list(self, domain_id, host_id=0, offset=0, row_num=30, host_name=None):
         if row_num > 2000:
             row_num = 2000
         #:domain_id?host_id=0&offset=:offset&row_num=:row_numURL
@@ -225,7 +225,7 @@ class CloudXNS_API():
         :return: String
     """
 
-    def domain_host_record_add(self, domain_id, host, host_value, record_type, line_id, mx=10, ttl=600):
+    def domain_host_record_add(self, domain_id, host, host_value, record_type, line_id=1, mx=10, ttl=600):
         url = 'https://www.cloudxns.net/api2/record'
         object_body = {}
         object_body['domain_id'] = domain_id
@@ -283,7 +283,7 @@ class CloudXNS_API():
         :return: String
     """
 
-    def domain_host_record_update(self, domain_id, record_id, host, host_value, record_type, line_id, mx=10, ttl=600,
+    def domain_host_record_update(self, domain_id, record_id, host, host_value, record_type, line_id=1, mx=10, ttl=600,
                                   bak_ip=None):
         url = 'https://www.cloudxns.net/api2/record/' + str(record_id)
         object_body = {}
